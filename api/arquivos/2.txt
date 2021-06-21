@@ -1,0 +1,72 @@
+Centro de Educação Superior de Brasília
+Centro Universitário Instituto de Educação Superior de Brasília
+Disciplina: Inteligência Artificial
+Turma: ENGN8C
+Professor: Leticia T. M. Zoby
+Exercícios Prolog
+O Prolog é uma linguagem de programação baseada em lógica de primeira ordem. Foi desenvolvida na Universidade
+de Marselha, França, com o intuito de ser uma ferramenta prática para programação em lógica. As questões 1 a 3 são
+referentes a Prolog.
+Questão 1
+O Prolog é uma linguagem de programação baseada em lógica de primeira ordem.
+Suponha os seguintes fatos:
+nota(joao,5.0).
+nota(maria,6.0).
+nota(joana,8.0).
+nota(mariana,9.0).
+nota(cleuza,8.5).
+nota(jose,6.5).
+nota(jaoquim,4.5).
+nota(mara,4.0).
+nota(mary,10.0).
+Considerando que:
+Nota de 7.0 á 10.0 = Aprovado.
+Nota de 5.0 á 6.9 = Recuperação.
+Nota de 0.0 á 4.9 = Reprovado.
+Qual é a regra que representa a situação de um determinado aluno:
+a)
+Reprovado
+reprov(X,Y):-nota(X,Y), Y<5.
+b)
+Aprovado
+aprov(X,Y):-nota(X,Y), Y>=7.
+Questão 2
+Expresse através de fatos e regras Prolog as informações contidas na seguinte frase:
+Vicky é um pássaro. Rubi é um peixe. Annelida é uma minhoca. Pássaros gostam de minhoca. Gatos
+gostam de peixe. Gatos gostam de pássaros. Amigos se gostam. Meu gato é meu amigo. Meu gato come
+tudo o que ele gosta.
+1
+(a) O que o meu gato come? Use Prolog para determinar.
+gosta(X):-
+(b) A resposta é razoável? Se não for, verifique se o problema está na especificação original ou na sua
+tradução para Prolog, corrija e execute novamente.
+Questão 3
+Considere os seguintes fatos Prolog:
+easy(1). gizmo(a, 1).
+easy(2). gizmo(b, 3).
+easy(3). gizmo(a, 2).
+gizmo(d, 5).
+gizmo(c, 3).
+gizmo(a, 3).
+gizmo(c, 4).
+Quais as respostas às seguintes interrogações?
+a) ?-easy(2).
+true
+b) ?-easy(X).
+X=1
+X=2
+X=3
+c) ?-gizmo(a, X).
+X=1
+X=2
+X=2
+X=3
+d) ?-gizmo(X, 3).
+X=b
+X=c
+X=a
+e) ?-gizmo(d, Y).
+Y=5
+f) ?-gizmo(X, X).
+false
+2

@@ -1,0 +1,161 @@
+#test-width {
+	opacity: 0;
+	position: absolute;
+  top: -666;
+  left: -666;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+	background-color: #000000;
+	color: #ccc;
+  font-family: 'freight-sans-pro';
+}
+#test-width, #container {
+	font-size: 8.0em;
+	font-weight: 500;
+}
+#container {
+	color: #333;
+	height: 400px;
+	width: 100%;
+  background-color: #f0f0f0;
+}
+
+#center-character {
+	color: #000000;
+}
+#left-string {
+	color: #000000;
+}
+#right-string {
+	color: #000000;
+}
+#input-text {
+	width: 500px;
+	height: 150px;
+	margin-top: 150px;
+	font-size: 2.0em;
+	display: block;
+	margin: auto;
+	box-sizing: border-box;
+	background-color: #f0f0f0;
+	color: #000000;
+  border: none;
+}
+.controls {
+  margin-left: 280px;
+  margin-bottom: 30px;
+}
+#playpause {
+  display: inline-block;
+	font-size: 1.5em;
+	color: #444;
+	text-align: center;
+	cursor: pointer;
+}
+.current-wpm {
+  display: inline-block;
+  position: relative;
+  top: -12px;
+  left: 20px;
+}
+.below {
+  position: relative;
+  bottom: -10px;
+  left: -20px;
+  font-size: 0.6em;
+}
+#wpm {
+  font-size: 2.5em;
+  font-weight: 900;
+}
+.slider {
+  display: inline-block;
+  position: relative;
+  left: 20px;
+  top: -10px;
+}
+#wpm-slider {
+  -webkit-appearance: none;
+  width: 100%;
+}
+#wpm-slider:focus {
+  outline: none;
+}
+#wpm-slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: #222;
+}
+#wpm-slider::-webkit-slider-thumb {
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background: #f0f0f0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4px;
+}
+#wpm-slider:focus::-webkit-slider-runnable-track {
+  background: #ED1F24;
+}
+#wpm-slider::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+#wpm-slider::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+#wpm-slider::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+#wpm-slider::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+#wpm-slider::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+#wpm-slider::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+#wpm-slider:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+#wpm-slider:focus::-ms-fill-upper {
+  background: #367ebd;
+}
